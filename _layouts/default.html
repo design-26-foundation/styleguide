@@ -1,0 +1,47 @@
+---
+Layout: compress
+---
+
+{% include styleguide/head.html %}
+
+  <body>
+
+    {% include styleguide/side-nav.html %}
+
+    <section class="main">
+      <div class="page-header">
+        <h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
+        <h3>{{ page.title }}</h3>
+      </div>
+      <article class="content">
+        {{ content }}
+      </article>
+    </section>
+
+    <script>
+      document.getElementById("open-nav").addEventListener("click", function () {
+        document.body.classList.toggle("nav-open");
+      });
+    </script>
+    <script src="{{ site.baseurl }}/scripts/app.js"></script>
+    <script>
+      $('a[href*="templates"]').click(function() {
+        $(this).attr('target', '_blank');
+      });
+
+
+      $('.top-level span').on("click",function(){
+        $(this).next("ul").toggle();
+      });
+
+      // $('.top-level').on("click",function(){
+      //   $(this).toggleClass('menu-show');
+      //   $(this).find(".side-sub").show();
+      //   $(this).siblings().find(".side-sub").hide().removeClass('menu-show');
+      //   $(this).siblings().removeClass('menu-show');
+      // });
+
+    </script>
+
+  </body>
+</html>

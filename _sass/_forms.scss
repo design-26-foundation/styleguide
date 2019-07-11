@@ -1,0 +1,22 @@
+// Forms listing page
+
+label {
+  display: block;
+}
+
+.text-input,
+textarea {
+  @include rem(padding, 10px);
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  max-width: 400px;
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    border: 1px solid $link-color;
+  }
+}
+
+
+
