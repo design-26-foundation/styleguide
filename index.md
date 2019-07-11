@@ -6,9 +6,9 @@ exclude: true
 
 ## This is a work in progress
 
-This is the latest version of the **_Budget Justice SA_** style guide - an internal guide and code repository for design and front-end development. You can drag the url below to your bookmarks toolbar to create a shortcut
+This is the latest version of the **_{{site.title}}_** style guide - an internal guide and code repository for design and front-end development. You can drag the url below to your bookmarks toolbar to create a shortcut
 
-> Styleguide url: [Design 26 style guide]({{site.baseurl}})
+> Styleguide url: [{{site.title}}]({{site.baseurl}})
 
 Please consult the [Change Log]({{site.baseurl}}changelog) for the latest additions and revisions.
 

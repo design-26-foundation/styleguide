@@ -1,10 +1,10 @@
 ::-moz-selection {
-	background: $elf-green;
+	background: green;
 	color: white;
 }
 
 ::selection {
-	background: $elf-green;
+	background: green;
 	color: white;
 }
 
@@ -15,7 +15,7 @@ h3 {
 }
 
 .coming-soon-header {
-	color: $elf-green;
+	color: green;
 	margin-top: 3rem;
 
 	@include breakpoint(769px) {
@@ -52,10 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-	color: $link-color;
+	color: $button-link-color;
 
 	// &:hover, &:active {
-	// 	color: $link-hover-color;
+	// 	color: $button-link-hover-color;
 	// }
 
 	//  &:focus {
@@ -104,7 +104,7 @@ dl dt {
 	text-align: right;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	font-weight: 700;
+	font-weight: 600;
 	margin-bottom: 1em;
 }
 
@@ -141,7 +141,7 @@ kbd {
 	border: #CCC 1px solid;
 	color: #666;
 	text-shadow: #FFF 0 1px 0;
-	font-size: 0.9em;
+	font-size: 0.6em;
 	font-weight: 700;
 	background: #F4F4F4;
 	border-radius: 4px;
@@ -157,5 +157,6 @@ kbd {
 blockquote {
 	@include rem(padding, 10px 24px);
 	@include rem(margin, 24px 0);
-	border-left: 0.5rem solid $elf-green;
+	background: white;
+	border-left: 0.5rem solid $indigo;
 }

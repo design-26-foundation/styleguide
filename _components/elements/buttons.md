@@ -1,7 +1,6 @@
 ---
 title: Buttons
 category: Elements
-order: 1
 scss: buttons.scss
 usage: "Application buttons"
 

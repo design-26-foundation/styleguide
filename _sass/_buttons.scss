@@ -14,7 +14,7 @@ input[type="button"] {
   @include rem(min-height, 50px);
   @include rem(min-width, 200px);
   align-items: center;
-  background-color: $button-color;
+  background-color: $button-link-color;
   border: 0;
   border-radius: 25px;
   color: white;
@@ -39,17 +39,17 @@ input[type="button"] {
   &.button-outline {
     @include rem(padding, 10px 18px);
     background: white;
-    border: 2px solid $button-hover-color;
-    color: $button-color;
+    border: 2px solid $button-link-hover-color;
+    color: $button-link-color;
 
     &:hover {
-      border-color: $button-hover-color;
+      border-color: $button-link-hover-color;
     }
 
   }
 
   &:hover, &:focus {
-    background: $button-hover-color;
+    background: $button-link-hover-color;
     color: white;
     text-decoration: none;
   }
@@ -160,14 +160,14 @@ input[type="button"] {
 .text-button {
   background: transparent;
   border: none;
-  color: $link-color;
+  color: $button-link-color;
   font-weight: 400;
   padding: 0;
   text-decoration: underline;
 
   &:hover, &:focus {
     background: transparent;
-    color: $link-hover-color;
+    color: $button-link-hover-color;
   }
 
 }

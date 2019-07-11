@@ -3,10 +3,10 @@
 
 title: Design 26 Foundation style guide
 subtitle: Style guide
-url: https://budget-justice-coalition.github.io/design/
+url: https://design26-style-guide.netlify.com/
 baseurl: ""
 show_full_navigation: true
-repository: budget-justice-coalition/design
+repository: justinslack/design26
 repo-host: Github
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)

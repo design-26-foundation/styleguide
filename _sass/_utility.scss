@@ -78,7 +78,7 @@
 }
 
 .spinner-color-teal {
-  fill: $elf-green;
+  fill: green;
 }
 
 .spinner-color-white {
@@ -140,7 +140,7 @@
   }
 
   &.graph-switched {
-    background: $elf-green;
+    background: green;
     &::before {
       transform: translateX(100%);
     }
@@ -224,8 +224,8 @@
 }
 
 .pagination .current, .pagination .active a {
-  background-color: $elf-green;
-  border-color: $elf-green;
+  background-color: green;
+  border-color: green;
   color: #ffffff;
   pointer-events: none;
 }
@@ -434,7 +434,7 @@ iframe {
   &::before {
     @include font-size(16);
     content: "\2713";
-    color: $elf-green;
+    color: green;
     font-weight: bold;
   }
 

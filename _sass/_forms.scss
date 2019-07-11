@@ -1,7 +1,53 @@
-// Forms listing page
+// Form and inputs
+
+
+// layout
+.input-wrapper {
+
+  p {
+    @include rem(margin, 0 0 16px);
+  }
+
+}
+
+.input-holder {
+  @include rem(margin, 0 0 16px);
+  @include font-size(14);
+}
+
+.inline-input {
+  @include rem(margin, 0 30px 0 0);
+}
+
+
+// placeholder
+
+::-webkit-input-placeholder {
+  color: $indigo;
+}
+
+::-moz-placeholder {
+  color: $indigo;
+}
+
+:-ms-input-placeholder {
+  color: $indigo;
+}
+
 
 label {
+  @include rem(margin, 0 0 8px);
   display: block;
+
+  &.inline-label {
+    display: inline-block;
+  }
+
+  &.bold-label {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
 }
 
 .text-input,
@@ -9,13 +55,311 @@ textarea {
   @include rem(padding, 10px);
   border: 1px solid $border-color;
   border-radius: 3px;
-  max-width: 400px;
+  // max-width: 400px;
   outline: none;
   width: 100%;
 
   &:focus {
-    border: 1px solid $link-color;
+    border: 1px solid $button-link-color;
   }
+
+
+  &.text-input-half {
+    width: 50%;
+  }
+
+  &.text-input-third {
+    width: 33.333333%;
+  }
+
+}
+
+
+textarea {
+  @include rem(min-height, 200px);
+  @include rem(padding, 8px);
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+}
+
+// Custom checkboxes and radio inputs
+
+.checkbox-custom, .radio-custom {
+  height: 15px;
+  opacity: 0;
+  position: absolute;
+  width: 15px;
+  z-index: 999;
+}
+
+.checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+  @include rem('margin', 0 10px 0 0);
+  align-items: center;
+  color: #666;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.checkbox-custom-label, .radio-custom-label {
+    position: relative;
+}
+
+.checkbox-custom + .checkbox-custom-label:before, .radio-custom + .radio-custom-label:before {
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid $violet;
+  content: '';
+  cursor: pointer;
+  display: inline-block;
+  height: 1rem;
+  margin-right: 0.5rem;
+  position: relative;
+  text-align: center;
+  transform: translateY(-1px);
+  transition: all 250ms ease;
+  vertical-align: middle;
+  width: 1rem;
+}
+
+.checkbox-custom + .checkbox-custom-label:before {
+  border-radius: 4px;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  @include font-size(12);
+  @include rem(line-height, 14px);
+  background-color: $violet;
+  border-color: $violet;
+  color: white;
+  content: "\2713";
+  font-weight: 600;
+}
+
+.radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+}
+
+.radio-custom:checked + .radio-custom-label:before {
+    background: $violet;
+    border-color: $violet;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+.checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+  // outline: 1px solid $border-color;
+}
+
+// Disabled
+
+.checkbox-custom[disabled] + .checkbox-custom-label:before,
+.checkbox-custom[disabled] {
+  background-color: transparent;
+  border-color: #dedede;
+}
+
+.radio-custom[disabled] + .radio-custom-label:before,
+.radio-custom[disabled] {
+  background-color: #dedede;
+  border-color: #dedede;
+  box-shadow: inset 0px 0px 0px 2px #fff;
+  cursor: not-allowed;
+}
+
+.checkbox-custom[disabled] + .checkbox-custom-label,
+.radio-custom[disabled] + .radio-custom-label {
+  color: #dedede;
+}
+
+// Selects
+
+.select-span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+  max-width:400px;
+
+  &::after {
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #808080 transparent transparent;
+    content: "";
+    display: block;
+    height: 7px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    top: 45%;
+    width: 0;
+    z-index: 12;
+  }
+
+  [disabled] {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+
+  select {
+    @include rem('padding', 8px 36px 8px 10px);
+    border-radius: 0;
+    background: white;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    color: $base-color;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 400;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 1;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &.error {
+      border-color: red;
+    }
+
+    [disabled] {
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: not-allowed;
+      opacity: 0.4;
+    }
+
+    &:focus {
+      border: 1px solid $violet;
+      outline: 0;
+    }
+
+  }
+}
+
+// Validation
+
+.text-input {
+  &.error {
+    border-color: $alert;
+  }
+}
+
+.form-message {
+  @include font-size(13);
+  display: block;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  color: #bbb;
+  letter-spacing: 0.2px;
+
+  &.error {
+    color: $alert;
+  }
+}
+
+// Browser specific styles
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Errors
+
+.validation-summary-errors {
+  @include rem(padding, 20px);
+  @include rem(margin, 0 0 20px);
+  background-color: $off-white;
+
+  ul {
+    @include rem(padding, 0 0 0 32px);
+    list-style-position: inside;
+    margin-bottom: 0;
+  }
+
+  &.validation-success {
+    background-color: $very-light-grey;
+  }
+
+  svg {
+    margin-right: 0.5rem;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+  }
+
+}
+
+// Nasty iOS hack to prevent zooming on inputs
+
+// /* iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{
+    font-size: 16px;
+  }
+}
+
+// /* iPhone 6, iPhone 6s, iPhone 7 portrait/landscape */
+@media screen and (device-aspect-ratio: 375/667) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{
+    font-size: 16px;
+  }
+}
+
+// /* iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus portrait/landscape */
+@media screen and (device-aspect-ratio: 9/16) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{
+    font-size: 16px;
+  }
+}
+
+// Remove search icons
+
+input[type=text]::-ms-clear,
+input[type=search]::-ms-clear,
+::-ms-clear {
+  display: none;
+}
+
+input[type=text]::-webkit-search-decoration,
+input[type=text]::-webkit-search-cancel-button,
+input[type=text]::-webkit-search-results-button,
+input[type=text]::-webkit-search-results-decoration,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+input[type=search].fund-search-input {
+  box-sizing: border-box;
 }
 
 

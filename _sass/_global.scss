@@ -1,9 +1,5 @@
 // Some global things
 
-* + * {
-  margin-top: 1.5em;
-}
-
 html {
   background-color: white;
   box-sizing: border-box;
@@ -30,10 +26,10 @@ body {
 }
 
 a {
-  color: $link-color;
+  color: $button-link-color;
 
   &:hover {
-    color: $link-hover-color;
+    color: $button-link-hover-color;
   }
 
   &:focus {
@@ -44,40 +40,4 @@ a {
 
 img {
   max-width: 100%;
-}
-
-// Coming soon (to be removed)
-
-.coming-soon-grid {
-  border-top: 1px solid transparent;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 1.5rem;
-
-  @include breakpoint(769px) {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 100vh;
-  }
-
-  > div {
-    flex: 1 0 0;
-    margin: auto;
-
-    &:last-of-type {
-      object-fit: cover;
-
-      @include breakpoint(769px) {
-        display: flex;
-        flex: 1 0 20%;
-      }
-    }
-
-    img {
-      width: 100%;
-    }
-
-  }
-
 }
