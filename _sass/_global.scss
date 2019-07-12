@@ -16,8 +16,8 @@ body {
   background-color: white;
   color: $base-color;
   font-family: $base-font-family;
-  font-size: calc(11px + 0.35vw);
-  line-height: calc(11px + 1.05vw);
+  font-size: 100%;
+  line-height: 1.5;
   font-weight: 400;
   height: 100%;
   letter-spacing: 0.01rem;
@@ -40,4 +40,43 @@ a {
 
 img {
   max-width: 100%;
+}
+
+// Site wide elements
+
+.top-header {
+  background-color: #fff;
+  margin: 0;
+  padding: 0 1rem;
+  width: 100%;
+}
+
+.header-elements {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  @extend %clearfix;
+  @include rem('padding', 8px 20px);
+
+  @include breakpoint(55em) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    @include rem('padding', 8px 0);
+  }
+
+}
+
+
+.logo {
+  // font-style: italic;
+  font-weight: 600;
+  text-decoration: none;
+
+  svg {
+    height: 34px;
+    vertical-align: middle;
+    width: 35px;
+
+  }
 }

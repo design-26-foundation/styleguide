@@ -11,56 +11,33 @@
 h1,
 h2,
 h3 {
-	color: $heading-color;
-}
-
-.coming-soon-header {
-	color: green;
-	margin-top: 3rem;
-
-	@include breakpoint(769px) {
-		margin-top: 0;
-	}
 
 }
 
 h1 {
-  font-size: 2.712em;
-  line-height: calc(18px + 5.8vw); /* Responsive Vertical Rhythm */
+
+
 }
 
 h2 {
-  font-size: 1.616em;
-  line-height: calc(18px + 1vw); /* Responsive Vertical Rhythm */
+
+
 }
 
 h3 {
-  font-size: 1.471em;
-  line-height: calc(18px + 0.7vw); /* Responsive Vertical Rhythm */
+
+
 }
 
-h4 { font-size: 1.3em; }
-h5 { font-size: 1.243em; }
-h6 { font-size: 1.132em; }
+h4 {  }
+h5 {  }
+h6 {  }
 
 h4, h5, h6 {
-  line-height: calc(18px + .2vw); /* Responsive Vertical Rhythm */
+
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: calc(12px + 1.05vw) 0; /* Responsive margins */
-}
-
-a {
-	color: $button-link-color;
-
-	// &:hover, &:active {
-	// 	color: $button-link-hover-color;
-	// }
-
-	//  &:focus {
- //    outline: 1px dotted black;
- //  }
 
 }
 

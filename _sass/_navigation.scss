@@ -1,0 +1,60 @@
+/*---Navigation---*/
+
+.navigation {
+  align-items: center;
+  display: flex;
+
+  @include breakpoint(58.125em) {
+    margin-left: auto;
+  }
+
+  ul {
+    @include rem('margin', 12px 32px 12px 0);
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    @include rem('margin', 0 5px);
+
+    @include breakpoint(43.75em) {
+      @include rem('margin', 0 20px);
+    }
+  }
+
+}
+
+.nav-primary-link {
+  @include font-size(14);
+  @include rem('padding', 0 0 4px);
+  color: $ultramarine;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+
+  &::after {
+    background-color: $pink;
+    content: "";
+    display: block;
+    height: 1px;
+    transform: scale(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &.current, &:hover {
+    color: $pink;
+
+    &::after {
+      display: block;
+      transform: scale(1);
+    }
+
+  }
+
+  &.current {
+    font-weight: 600;
+  }
+
+}

@@ -1,0 +1,57 @@
+// Home page
+
+.center-split {
+  --center-split-max-width: 50vw;
+}
+
+.center-split > article {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+}
+
+.center-split img,
+.center-split picture,
+.center-split video {
+  display: block;
+  padding: 0;
+  object-fit: cover;
+}
+
+@media (min-width: 720px) {
+  .center-split {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-items: stretch;
+  }
+
+  .center-split > * > * {
+    max-width: var(--center-split-max-width);
+  }
+
+  .center-split > img,
+  .center-split > picture,
+  .center-split > video {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.cta, .split-image {
+  color: white;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  text-align: center;
+}
+
+.cta {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  max-width: 20rem;
+
+  button {
+    margin: 0 auto;
+  }
+
+}

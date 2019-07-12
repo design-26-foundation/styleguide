@@ -56,6 +56,9 @@ SASS variable is given along with `hsl` value.
     <div class="swatch" style="background-color: hsl(223, 100%, 60%);">
       $blue<br>hsl(223, 100%, 60%);
     </div>
+    <div class="swatch" style="background-color: hsl(335, 60%, 52%);">
+      $pink<br>hsl(335, 60%, 52%)
+    </div>
   </div>
 </div>
 

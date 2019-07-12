@@ -18,6 +18,7 @@ $indigo: hsl(281, 100%, 23%);
 $ultramarine: hsl(252, 100%, 29%);
 $blue: hsl(223, 100%, 60%);
 $violet: hsl(281, 35%, 48%);
+$pink: hsl(335, 60%, 52%);
 
 // Errors, warnings, completions
 
@@ -33,8 +34,8 @@ $light-grey: hsl(0°, 0%, 76%);
 
 // Buttons and links
 
-$button-link-color: $violet;
-$button-link-hover-color: darken($violet, 10%);
+$button-link-color: $indigo;
+$button-link-hover-color: darken($indigo, 10%);
 
 // Border etc
 

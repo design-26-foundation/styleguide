@@ -4,10 +4,17 @@ Layout: compress
 
 	{% include header.html %}
 
-	<body>
-  <div class="site-wrapper">
+  <body>
+    <div class="site-wrapper">
 
-	{{ content }}
-  </div>
+      <header class="main-header">
+        {% include nav.html %}
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+      {% include footer.html %}
+    </div>
 	</body>
 </html>

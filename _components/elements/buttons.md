@@ -16,6 +16,16 @@ usage: "Application buttons"
 
 ---
 
+#### Pink button - `type="button"`
+
+<button type="button" class="button">Button</button>
+
+{% highlight html %}
+<button type="button button-pink" class="button">Button</button>
+{% endhighlight %}
+
+---
+
 #### Large CTA Button - `type="button"`
 
 <button type="button" class="button button-large-cta">Button</button>

@@ -30,6 +30,13 @@ input[type="button"] {
     @include rem(margin, 0 0 0 15px);
   }
 
+  &.button-small {
+    @include rem(padding, 7px 20px);
+    @include font-size(14);
+    @include rem(min-height, 30px);
+    @include rem(min-width, 120px);
+  }
+
   &.button-large-cta {
     @include rem(min-height, 50px);
     @include font-size(18);
@@ -44,6 +51,15 @@ input[type="button"] {
 
     &:hover {
       border-color: $button-link-hover-color;
+    }
+
+  }
+
+  &.button-pink {
+    background-color: $pink;
+
+    &:hover {
+      background-color: darken($pink, 10%);
     }
 
   }
@@ -91,11 +107,6 @@ input[type="button"] {
 
   }
 
-  &.neutral-button {
-    background-color: $light-grey;
-    color: $light-grey;
-  }
-
   &:focus {
     outline: 1px dotted black;
   }
@@ -104,26 +115,6 @@ input[type="button"] {
     background-color: #e6e6e6;
     color: #cccccc;
     cursor: not-allowed;
-  }
-
-  &.slider-button {
-    background-color: #006341;
-    border: 0;
-  }
-
-  &.loading-button {
-    padding-right: 2.5rem;
-    position: relative;
-    transition: none;
-
-    svg {
-      @include rem(right, 10px);
-      position: absolute;
-      height: 1.2rem;
-      top: 35%;
-      width: 1.2rem;
-    }
-
   }
 
   svg {
