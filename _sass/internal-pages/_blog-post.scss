@@ -5,7 +5,26 @@
   display: grid;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1.25rem 0;
+  padding: 7rem 0;
   grid-template-columns: 12% 55% 20%;
   grid-gap: 4rem;
+}
+
+.article-body {
+  @include rem(padding, 20px 0);
+  border-top: 1px solid $carisma;
+}
+
+.aside-similar {
+  border-top: 1px solid $carisma;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.single-article-header {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
 }
