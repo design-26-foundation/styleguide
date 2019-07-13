@@ -118,3 +118,31 @@
   }
 
 }
+
+// Contact
+
+.contact-block {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 5rem;
+}
+
+.contact-content {
+
+}
+
+div[itemscope] span {
+  display: block;
+}
+
+.link-map {
+  padding: 2.5rem 2rem 0 0;
+  display: block;
+  text-decoration: none;
+  transition: color 150ms ease-in;
+}
+
+.link-map img {
+  border: 1px solid $violet;
+  box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1);
+}
