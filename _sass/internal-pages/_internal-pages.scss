@@ -81,11 +81,10 @@
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem;
 }
 
 .blog-image {
-  // height: 300px;
   object-fit: contain;
 
   img {
@@ -94,6 +93,6 @@
 
 }
 
-.blog-meta {
-
+.blog-page-link {
+  color: white;
 }
