@@ -1,7 +1,7 @@
 ---
-title: Page banner
+title: Stats CTA
 category: Patterns
-scss: internal-pages.css
+scss: home-styles.css
 usage: Site footer
 
 ---
