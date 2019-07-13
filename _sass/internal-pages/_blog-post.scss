@@ -2,17 +2,23 @@
 
 
 .article-container {
-  display: grid;
+  @include rem(max-width, 600px);
   margin: 0 auto;
-  max-width: 1200px;
   padding: 7rem 0;
-  grid-template-columns: 12% 55% 20%;
-  grid-gap: 4rem;
 }
 
 .article-body {
   @include rem(padding, 20px 0);
   border-top: 1px solid $carisma;
+
+  figcaption {
+    display: block;
+    font-size: 0.875rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
 }
 
 .aside-similar {
