@@ -7,7 +7,7 @@ sitemap: false
 @import "mixins";
 @import "normalize";
 @import "fonts";
-@import "flex-grid";
+@import "grids";
 @import "typography";
 @import "global";
 @import "forms";
@@ -17,6 +17,7 @@ sitemap: false
 @import "utility";
 @import "navigation";
 @import "footer";
+@import "comments";
 @import "home-page/home-styles";
-
-
+@import "internal-pages/internal-pages";
+@import "internal-pages/blog-post";

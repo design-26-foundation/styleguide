@@ -1,0 +1,11 @@
+// Blog posts
+
+
+.article-container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.25rem 0;
+  grid-template-columns: 12% 55% 20%;
+  grid-gap: 4rem;
+}
