@@ -63,3 +63,30 @@
 .dark-cta {
   color: $base-color;
 }
+
+.funding-info {
+  @include rem(padding, 32px 0);
+  background-color: $carisma;
+
+  > article {
+    @include rem(max-width, 960px);
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+  }
+
+}
+
+.funding-info-block {
+  background-color: white;
+  flex: 1 0 50%;
+
+  img {
+    display: block;
+  }
+
+}
+
+.stats {
+
+}
