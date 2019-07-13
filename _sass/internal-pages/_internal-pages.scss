@@ -36,6 +36,17 @@
       order: 4;
     }
   }
+
+  &.donate-page {
+    @include rem(max-width, 960px);
+
+    .button {
+      max-width: 16rem;
+    }
+
+  }
+
+
 }
 
 .about-image {
