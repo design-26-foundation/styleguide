@@ -95,4 +95,25 @@
 
 .blog-page-link {
   color: white;
+  text-decoration: none;
+
+  &:hover {
+    color:white;
+    text-decoration: underline;
+  }
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  padding: 4rem 2rem;
+
+  img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
 }
