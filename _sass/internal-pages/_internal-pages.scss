@@ -60,3 +60,40 @@
     vertical-align: middle;
   }
 }
+
+
+// Blog posts
+
+.blog-landing {
+  @include rem(padding, 64px 0);
+}
+
+.four-column-grid {
+  @include rem(max-width, 960px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.blog-meta {
+  background-color: $pink;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.blog-image {
+  // height: 300px;
+  object-fit: contain;
+
+  img {
+    display: block;
+  }
+
+}
+
+.blog-meta {
+
+}
