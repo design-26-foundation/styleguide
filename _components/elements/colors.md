@@ -44,11 +44,11 @@ SASS variable is given along with `hsl` value.
 <div class="colour-palette">
   <h3>Design 26 Foundation colour pallete.</h3>
    <div class="swatch-wrapper">
-    <div class="swatch" style="background-color: hsl(281, 100%, 23%);">
-      $indigo<br>hsl(281, 100%, 23%)
+    <div class="swatch" style="background-color: hsl(347, 62%, 69%);">
+      $carisma<br>hsl(347, 62%, 69%);
     </div>
-    <div class="swatch" style="background-color: hsl(281, 35%, 48%);">
-      $violet<br>hsl(281, 35%, 48%);
+    <div class="swatch" style="background-color: hsl(331, 90%, 91%);">
+      $violet<br>hsl(331, 90%, 91%);
     </div>
     <div class="swatch" style="background-color: hsl(252, 100%, 29%);">
       $ultramarine<br>hsl(252, 100%, 29%);

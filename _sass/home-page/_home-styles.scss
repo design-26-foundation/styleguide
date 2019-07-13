@@ -8,6 +8,11 @@
   align-items: center;
   display: grid;
   justify-items: center;
+
+  &:first-of-type {
+    // order: 2;
+  }
+
 }
 
 .center-split img,
@@ -52,4 +57,9 @@
     max-width: 13rem;
   }
 
+}
+
+
+.dark-cta {
+  color: $base-color;
 }

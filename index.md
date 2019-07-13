@@ -14,4 +14,4 @@ Please consult the [Change Log]({{site.baseurl}}changelog) for the latest additi
 
 ## Assets
 
-Download the latest: <a href="" download>stylesheet</a>, <a href="" download>js file</a>, <a href="" download>images</a>
+Download the latest: <a href="{{site.baseurl}}/css/main.css" download>stylesheet</a>, <a href="" download>js file</a>, <a href="" download>images</a>
