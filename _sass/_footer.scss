@@ -3,8 +3,6 @@
 
 .main-footer {
   background-color: $carisma;
-  // background-image: linear-gradient(176deg, white 50%, $carisma calc(50% + 2px));
-  min-height: 18rem;
   width: 100%;
   align-items: flex-end;
   display: flex;
@@ -12,15 +10,19 @@
 
 .social-links {
   @include rem(padding, 27px 0);
+  align-items: center;
+  display: flex;
   margin-left: auto;
 
+
   a {
-    // margin: 0 0 0 0.3rem;
+    margin-left: 0.3rem;
     text-decoration: none;
 
     svg {
-      width: 20px;
       height: 20px;
+      vertical-align: middle;
+      width: 20px;
     }
   }
 
@@ -37,6 +39,7 @@
 
 
 .tagline {
-  font-size: 2rem;
-  font-weight: 400;
+  color: $carisma;
+  font-size: 4rem;
+  text-align: center;
 }

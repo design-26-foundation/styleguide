@@ -67,6 +67,7 @@
 .funding-info {
   @include rem(padding, 32px 0);
   background-color: $violet;
+  margin: 3rem 0 6rem;
 
   > article {
     @include rem(max-width, 960px);

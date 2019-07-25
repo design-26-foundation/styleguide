@@ -1,13 +1,13 @@
 # Primary home navigation links
 
 primary:
-  - title: "Our impact"
-    url: /components/templates/our-impact/
+  # - title: "Our impact"
+  #   url: /components/templates/our-impact/
   - title: "About"
     url: /components/templates/about-page/
   - title: "Gallery"
-    url: /gallery/
+    url: /components/templates/gallery/
   - title: "Blog"
-    url: /blog/
+    url: /components/templates/blog/
   - title: "Contact"
-    url: /contact-us/
+    url: /components/templates/contact-us/
